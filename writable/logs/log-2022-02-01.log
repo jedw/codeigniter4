@@ -1,0 +1,516 @@
+CRITICAL - 2022-02-01 16:35:34 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 /var/www/html/codeigniter/system/CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /var/www/html/codeigniter/system/CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /var/www/html/codeigniter/system/bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 /var/www/html/codeigniter/index.php(28): require('/var/www/html/c...')
+#4 {main}
+CRITICAL - 2022-02-01 16:36:29 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 /var/www/html/codeigniter/system/CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /var/www/html/codeigniter/system/CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /var/www/html/codeigniter/system/bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 /var/www/html/codeigniter/index.php(28): require('/var/www/html/c...')
+#4 {main}
+CRITICAL - 2022-02-01 16:37:29 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 /var/www/html/codeigniter/system/CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /var/www/html/codeigniter/system/CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /var/www/html/codeigniter/system/bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 /var/www/html/codeigniter/index.php(28): require('/var/www/html/c...')
+#4 {main}
+CRITICAL - 2022-02-01 16:37:31 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 /var/www/html/codeigniter/system/CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /var/www/html/codeigniter/system/CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /var/www/html/codeigniter/system/bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 /var/www/html/codeigniter/index.php(28): require('/var/www/html/c...')
+#4 {main}
+CRITICAL - 2022-02-01 10:38:26 --> Call to undefined function CodeIgniter\Debug\array_key_first()
+#0 /var/www/html/codeigniter/system/Debug/Toolbar.php(275): CodeIgniter\Debug\Toolbar->structureTimelineData(Array)
+#1 /var/www/html/codeigniter/system/Debug/Toolbar.php(170): CodeIgniter\Debug\Toolbar->collectTimelineData(Array)
+#2 /var/www/html/codeigniter/system/Debug/Toolbar/Views/toolbar.tpl.php(96): CodeIgniter\Debug\Toolbar->renderTimeline(Array, 1643733505.9049, 6, 15, Array)
+#3 /var/www/html/codeigniter/system/Debug/Toolbar.php(501): include('/var/www/html/c...')
+#4 /var/www/html/codeigniter/system/Debug/Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#5 /var/www/html/codeigniter/app/Config/Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#6 /var/www/html/codeigniter/system/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#7 /var/www/html/codeigniter/system/CodeIgniter.php(302): CodeIgniter\Events\Events::trigger('pre_system')
+#8 /var/www/html/codeigniter/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 10:38:26 --> Uncaught ErrorException: setcookie() expects parameter 3 to be integer, array given in /var/www/html/codeigniter/system/HTTP/ResponseTrait.php:743
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'setcookie() exp...', '/var/www/html/c...', 743, Array)
+#1 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(743): setcookie('csrf_cookie_nam...', '174119ab93b6a88...', Array)
+#2 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(719): CodeIgniter\HTTP\Response->doSetCookie('csrf_cookie_nam...', '174119ab93b6a88...', Array)
+#3 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#5 /var/www/html/codeigniter/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#6 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#7 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-01 10:47:00 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/var/www/html/c...', 305, Array)
+#1 /var/www/html/codeigniter/system/Session/Session.php(305): session_set_cookie_params(Array)
+#2 /var/www/html/codeigniter/system/Session/Session.php(228): CodeIgniter\Session\Session->configure()
+#3 /var/www/html/codeigniter/system/Config/Services.php(577): CodeIgniter\Session\Session->start()
+#4 /var/www/html/codeigniter/system/Config/BaseService.php(248): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#5 /var/www/html/codeigniter/system/Config/BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#6 /var/www/html/codeigniter/system/Config/Services.php(563): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#7 /var/www/html/codeigniter/system/Config/BaseService.php(248): CodeIgniter\Config\Services::session()
+#8 /var/www/html/codeigniter/app/Controllers/Crud.php(10): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#9 /var/www/html/codeigniter/system/CodeIgniter.php(802): App\Controllers\Crud->__construct()
+#10 /var/www/html/codeigniter/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#11 /var/www/html/codeigniter/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/html/codeigniter/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-02-01 10:47:36 --> Error connecting to the database: Unknown database 'ci4'
+CRITICAL - 2022-02-01 10:47:36 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'ci4'
+#0 /var/www/html/codeigniter/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/codeigniter/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /var/www/html/codeigniter/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /var/www/html/codeigniter/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 /var/www/html/codeigniter/app/Models/StudentModel.php(14): CodeIgniter\BaseModel->findAll()
+#5 /var/www/html/codeigniter/app/Controllers/Crud.php(13): App\Models\StudentModel->getAllStudents()
+#6 /var/www/html/codeigniter/system/CodeIgniter.php(825): App\Controllers\Crud->records()
+#7 /var/www/html/codeigniter/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#8 /var/www/html/codeigniter/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/codeigniter/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-01 10:47:36 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in /var/www/html/codeigniter/app/Views/errors/html/error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', '/var/www/html/c...', 96, Array)
+#1 /var/www/html/codeigniter/app/Views/errors/html/error_exception.php(96): print_r(Object(App\Controllers\Crud), true)
+#2 /var/www/html/codeigniter/system/Debug/Exceptions.php(234): include('/var/www/html/c...')
+#3 /var/www/html/codeigniter/system/Debug/Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 /var/www/html/codeigniter/system/Debug/Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-02-01 10:48:15 --> Error connecting to the database: Unknown database 'ci4'
+CRITICAL - 2022-02-01 10:48:15 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'ci4'
+#0 /var/www/html/codeigniter/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/codeigniter/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /var/www/html/codeigniter/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /var/www/html/codeigniter/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 /var/www/html/codeigniter/app/Models/StudentModel.php(14): CodeIgniter\BaseModel->findAll()
+#5 /var/www/html/codeigniter/app/Controllers/Crud.php(13): App\Models\StudentModel->getAllStudents()
+#6 /var/www/html/codeigniter/system/CodeIgniter.php(825): App\Controllers\Crud->records()
+#7 /var/www/html/codeigniter/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#8 /var/www/html/codeigniter/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/codeigniter/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-01 10:48:15 --> Uncaught ErrorException: print_r(): Property access is not allowed yet in /var/www/html/codeigniter/app/Views/errors/html/error_exception.php:96
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'print_r(): Prop...', '/var/www/html/c...', 96, Array)
+#1 /var/www/html/codeigniter/app/Views/errors/html/error_exception.php(96): print_r(Object(App\Controllers\Crud), true)
+#2 /var/www/html/codeigniter/system/Debug/Exceptions.php(234): include('/var/www/html/c...')
+#3 /var/www/html/codeigniter/system/Debug/Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#4 /var/www/html/codeigniter/system/Debug/Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-01 10:51:17 --> Call to undefined function CodeIgniter\Debug\array_key_first()
+#0 /var/www/html/codeigniter/system/Debug/Toolbar.php(275): CodeIgniter\Debug\Toolbar->structureTimelineData(Array)
+#1 /var/www/html/codeigniter/system/Debug/Toolbar.php(170): CodeIgniter\Debug\Toolbar->collectTimelineData(Array)
+#2 /var/www/html/codeigniter/system/Debug/Toolbar/Views/toolbar.tpl.php(96): CodeIgniter\Debug\Toolbar->renderTimeline(Array, 1643734277.5754, 4, 10, Array)
+#3 /var/www/html/codeigniter/system/Debug/Toolbar.php(501): include('/var/www/html/c...')
+#4 /var/www/html/codeigniter/system/Debug/Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#5 /var/www/html/codeigniter/app/Config/Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#6 /var/www/html/codeigniter/system/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#7 /var/www/html/codeigniter/system/CodeIgniter.php(302): CodeIgniter\Events\Events::trigger('pre_system')
+#8 /var/www/html/codeigniter/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 10:51:17 --> Uncaught ErrorException: setcookie() expects parameter 3 to be integer, array given in /var/www/html/codeigniter/system/HTTP/ResponseTrait.php:743
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'setcookie() exp...', '/var/www/html/c...', 743, Array)
+#1 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(743): setcookie('csrf_cookie_nam...', '6a3793f49f1cfa2...', Array)
+#2 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(719): CodeIgniter\HTTP\Response->doSetCookie('csrf_cookie_nam...', '6a3793f49f1cfa2...', Array)
+#3 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#5 /var/www/html/codeigniter/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#6 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#7 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-01 10:51:45 --> Call to undefined function CodeIgniter\Debug\array_key_first()
+#0 /var/www/html/codeigniter/system/Debug/Toolbar.php(275): CodeIgniter\Debug\Toolbar->structureTimelineData(Array)
+#1 /var/www/html/codeigniter/system/Debug/Toolbar.php(170): CodeIgniter\Debug\Toolbar->collectTimelineData(Array)
+#2 /var/www/html/codeigniter/system/Debug/Toolbar/Views/toolbar.tpl.php(96): CodeIgniter\Debug\Toolbar->renderTimeline(Array, 1643734305.2457, 2, 5, Array)
+#3 /var/www/html/codeigniter/system/Debug/Toolbar.php(501): include('/var/www/html/c...')
+#4 /var/www/html/codeigniter/system/Debug/Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#5 /var/www/html/codeigniter/app/Config/Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#6 /var/www/html/codeigniter/system/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#7 /var/www/html/codeigniter/system/CodeIgniter.php(302): CodeIgniter\Events\Events::trigger('pre_system')
+#8 /var/www/html/codeigniter/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 10:51:45 --> Uncaught ErrorException: setcookie() expects parameter 3 to be integer, array given in /var/www/html/codeigniter/system/HTTP/ResponseTrait.php:743
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'setcookie() exp...', '/var/www/html/c...', 743, Array)
+#1 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(743): setcookie('csrf_cookie_nam...', 'af40baca44ffe3c...', Array)
+#2 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(719): CodeIgniter\HTTP\Response->doSetCookie('csrf_cookie_nam...', 'af40baca44ffe3c...', Array)
+#3 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#5 /var/www/html/codeigniter/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#6 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#7 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-01 10:52:26 --> Call to undefined function CodeIgniter\Debug\array_key_first()
+#0 /var/www/html/codeigniter/system/Debug/Toolbar.php(275): CodeIgniter\Debug\Toolbar->structureTimelineData(Array)
+#1 /var/www/html/codeigniter/system/Debug/Toolbar.php(170): CodeIgniter\Debug\Toolbar->collectTimelineData(Array)
+#2 /var/www/html/codeigniter/system/Debug/Toolbar/Views/toolbar.tpl.php(96): CodeIgniter\Debug\Toolbar->renderTimeline(Array, 1643734346.056, 3, 5, Array)
+#3 /var/www/html/codeigniter/system/Debug/Toolbar.php(501): include('/var/www/html/c...')
+#4 /var/www/html/codeigniter/system/Debug/Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#5 /var/www/html/codeigniter/app/Config/Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#6 /var/www/html/codeigniter/system/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#7 /var/www/html/codeigniter/system/CodeIgniter.php(302): CodeIgniter\Events\Events::trigger('pre_system')
+#8 /var/www/html/codeigniter/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 10:52:26 --> Uncaught ErrorException: setcookie() expects parameter 3 to be integer, array given in /var/www/html/codeigniter/system/HTTP/ResponseTrait.php:743
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'setcookie() exp...', '/var/www/html/c...', 743, Array)
+#1 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(743): setcookie('csrf_cookie_nam...', 'b84185597bc570c...', Array)
+#2 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(719): CodeIgniter\HTTP\Response->doSetCookie('csrf_cookie_nam...', 'b84185597bc570c...', Array)
+#3 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#5 /var/www/html/codeigniter/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#6 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#7 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-01 10:52:29 --> Call to undefined function CodeIgniter\Debug\array_key_first()
+#0 /var/www/html/codeigniter/system/Debug/Toolbar.php(275): CodeIgniter\Debug\Toolbar->structureTimelineData(Array)
+#1 /var/www/html/codeigniter/system/Debug/Toolbar.php(170): CodeIgniter\Debug\Toolbar->collectTimelineData(Array)
+#2 /var/www/html/codeigniter/system/Debug/Toolbar/Views/toolbar.tpl.php(96): CodeIgniter\Debug\Toolbar->renderTimeline(Array, 1643734349.5521, 2, 5, Array)
+#3 /var/www/html/codeigniter/system/Debug/Toolbar.php(501): include('/var/www/html/c...')
+#4 /var/www/html/codeigniter/system/Debug/Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#5 /var/www/html/codeigniter/app/Config/Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#6 /var/www/html/codeigniter/system/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#7 /var/www/html/codeigniter/system/CodeIgniter.php(302): CodeIgniter\Events\Events::trigger('pre_system')
+#8 /var/www/html/codeigniter/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 10:52:29 --> Uncaught ErrorException: setcookie() expects parameter 3 to be integer, array given in /var/www/html/codeigniter/system/HTTP/ResponseTrait.php:743
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'setcookie() exp...', '/var/www/html/c...', 743, Array)
+#1 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(743): setcookie('csrf_cookie_nam...', '4474f5afda5990e...', Array)
+#2 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(719): CodeIgniter\HTTP\Response->doSetCookie('csrf_cookie_nam...', '4474f5afda5990e...', Array)
+#3 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#5 /var/www/html/codeigniter/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#6 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#7 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-01 10:52:33 --> Call to undefined function CodeIgniter\Debug\array_key_first()
+#0 /var/www/html/codeigniter/system/Debug/Toolbar.php(275): CodeIgniter\Debug\Toolbar->structureTimelineData(Array)
+#1 /var/www/html/codeigniter/system/Debug/Toolbar.php(170): CodeIgniter\Debug\Toolbar->collectTimelineData(Array)
+#2 /var/www/html/codeigniter/system/Debug/Toolbar/Views/toolbar.tpl.php(96): CodeIgniter\Debug\Toolbar->renderTimeline(Array, 1643734353.5204, 2, 5, Array)
+#3 /var/www/html/codeigniter/system/Debug/Toolbar.php(501): include('/var/www/html/c...')
+#4 /var/www/html/codeigniter/system/Debug/Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#5 /var/www/html/codeigniter/app/Config/Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#6 /var/www/html/codeigniter/system/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#7 /var/www/html/codeigniter/system/CodeIgniter.php(302): CodeIgniter\Events\Events::trigger('pre_system')
+#8 /var/www/html/codeigniter/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 10:52:33 --> Uncaught ErrorException: setcookie() expects parameter 3 to be integer, array given in /var/www/html/codeigniter/system/HTTP/ResponseTrait.php:743
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'setcookie() exp...', '/var/www/html/c...', 743, Array)
+#1 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(743): setcookie('csrf_cookie_nam...', 'f1f7b8eca790e23...', Array)
+#2 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(719): CodeIgniter\HTTP\Response->doSetCookie('csrf_cookie_nam...', 'f1f7b8eca790e23...', Array)
+#3 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#5 /var/www/html/codeigniter/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#6 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#7 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-01 10:52:35 --> Call to undefined function CodeIgniter\Debug\array_key_first()
+#0 /var/www/html/codeigniter/system/Debug/Toolbar.php(275): CodeIgniter\Debug\Toolbar->structureTimelineData(Array)
+#1 /var/www/html/codeigniter/system/Debug/Toolbar.php(170): CodeIgniter\Debug\Toolbar->collectTimelineData(Array)
+#2 /var/www/html/codeigniter/system/Debug/Toolbar/Views/toolbar.tpl.php(96): CodeIgniter\Debug\Toolbar->renderTimeline(Array, 1643734355.1824, 2, 5, Array)
+#3 /var/www/html/codeigniter/system/Debug/Toolbar.php(501): include('/var/www/html/c...')
+#4 /var/www/html/codeigniter/system/Debug/Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#5 /var/www/html/codeigniter/app/Config/Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#6 /var/www/html/codeigniter/system/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#7 /var/www/html/codeigniter/system/CodeIgniter.php(302): CodeIgniter\Events\Events::trigger('pre_system')
+#8 /var/www/html/codeigniter/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 10:52:35 --> Uncaught ErrorException: setcookie() expects parameter 3 to be integer, array given in /var/www/html/codeigniter/system/HTTP/ResponseTrait.php:743
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'setcookie() exp...', '/var/www/html/c...', 743, Array)
+#1 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(743): setcookie('csrf_cookie_nam...', 'ea76e0e153ddea2...', Array)
+#2 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(719): CodeIgniter\HTTP\Response->doSetCookie('csrf_cookie_nam...', 'ea76e0e153ddea2...', Array)
+#3 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#5 /var/www/html/codeigniter/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#6 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#7 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-01 10:52:36 --> Call to undefined function CodeIgniter\Debug\array_key_first()
+#0 /var/www/html/codeigniter/system/Debug/Toolbar.php(275): CodeIgniter\Debug\Toolbar->structureTimelineData(Array)
+#1 /var/www/html/codeigniter/system/Debug/Toolbar.php(170): CodeIgniter\Debug\Toolbar->collectTimelineData(Array)
+#2 /var/www/html/codeigniter/system/Debug/Toolbar/Views/toolbar.tpl.php(96): CodeIgniter\Debug\Toolbar->renderTimeline(Array, 1643734356.5068, 2, 5, Array)
+#3 /var/www/html/codeigniter/system/Debug/Toolbar.php(501): include('/var/www/html/c...')
+#4 /var/www/html/codeigniter/system/Debug/Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#5 /var/www/html/codeigniter/app/Config/Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#6 /var/www/html/codeigniter/system/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#7 /var/www/html/codeigniter/system/CodeIgniter.php(302): CodeIgniter\Events\Events::trigger('pre_system')
+#8 /var/www/html/codeigniter/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 10:52:36 --> Uncaught ErrorException: setcookie() expects parameter 3 to be integer, array given in /var/www/html/codeigniter/system/HTTP/ResponseTrait.php:743
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'setcookie() exp...', '/var/www/html/c...', 743, Array)
+#1 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(743): setcookie('csrf_cookie_nam...', 'e4b5cd40b328266...', Array)
+#2 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(719): CodeIgniter\HTTP\Response->doSetCookie('csrf_cookie_nam...', 'e4b5cd40b328266...', Array)
+#3 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#5 /var/www/html/codeigniter/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#6 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#7 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-01 10:52:38 --> Call to undefined function CodeIgniter\Debug\array_key_first()
+#0 /var/www/html/codeigniter/system/Debug/Toolbar.php(275): CodeIgniter\Debug\Toolbar->structureTimelineData(Array)
+#1 /var/www/html/codeigniter/system/Debug/Toolbar.php(170): CodeIgniter\Debug\Toolbar->collectTimelineData(Array)
+#2 /var/www/html/codeigniter/system/Debug/Toolbar/Views/toolbar.tpl.php(96): CodeIgniter\Debug\Toolbar->renderTimeline(Array, 1643734357.86, 2, 5, Array)
+#3 /var/www/html/codeigniter/system/Debug/Toolbar.php(501): include('/var/www/html/c...')
+#4 /var/www/html/codeigniter/system/Debug/Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#5 /var/www/html/codeigniter/app/Config/Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#6 /var/www/html/codeigniter/system/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#7 /var/www/html/codeigniter/system/CodeIgniter.php(302): CodeIgniter\Events\Events::trigger('pre_system')
+#8 /var/www/html/codeigniter/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 10:52:38 --> Uncaught ErrorException: setcookie() expects parameter 3 to be integer, array given in /var/www/html/codeigniter/system/HTTP/ResponseTrait.php:743
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'setcookie() exp...', '/var/www/html/c...', 743, Array)
+#1 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(743): setcookie('csrf_cookie_nam...', '6d9fce5b05db26f...', Array)
+#2 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(719): CodeIgniter\HTTP\Response->doSetCookie('csrf_cookie_nam...', '6d9fce5b05db26f...', Array)
+#3 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#5 /var/www/html/codeigniter/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#6 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#7 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-01 10:52:38 --> Call to undefined function CodeIgniter\Debug\array_key_first()
+#0 /var/www/html/codeigniter/system/Debug/Toolbar.php(275): CodeIgniter\Debug\Toolbar->structureTimelineData(Array)
+#1 /var/www/html/codeigniter/system/Debug/Toolbar.php(170): CodeIgniter\Debug\Toolbar->collectTimelineData(Array)
+#2 /var/www/html/codeigniter/system/Debug/Toolbar/Views/toolbar.tpl.php(96): CodeIgniter\Debug\Toolbar->renderTimeline(Array, 1643734358.8541, 2, 5, Array)
+#3 /var/www/html/codeigniter/system/Debug/Toolbar.php(501): include('/var/www/html/c...')
+#4 /var/www/html/codeigniter/system/Debug/Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#5 /var/www/html/codeigniter/app/Config/Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#6 /var/www/html/codeigniter/system/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#7 /var/www/html/codeigniter/system/CodeIgniter.php(302): CodeIgniter\Events\Events::trigger('pre_system')
+#8 /var/www/html/codeigniter/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 10:52:38 --> Uncaught ErrorException: setcookie() expects parameter 3 to be integer, array given in /var/www/html/codeigniter/system/HTTP/ResponseTrait.php:743
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'setcookie() exp...', '/var/www/html/c...', 743, Array)
+#1 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(743): setcookie('csrf_cookie_nam...', 'ab2c287236cdbac...', Array)
+#2 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(719): CodeIgniter\HTTP\Response->doSetCookie('csrf_cookie_nam...', 'ab2c287236cdbac...', Array)
+#3 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#5 /var/www/html/codeigniter/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#6 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#7 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-01 10:52:40 --> Call to undefined function CodeIgniter\Debug\array_key_first()
+#0 /var/www/html/codeigniter/system/Debug/Toolbar.php(275): CodeIgniter\Debug\Toolbar->structureTimelineData(Array)
+#1 /var/www/html/codeigniter/system/Debug/Toolbar.php(170): CodeIgniter\Debug\Toolbar->collectTimelineData(Array)
+#2 /var/www/html/codeigniter/system/Debug/Toolbar/Views/toolbar.tpl.php(96): CodeIgniter\Debug\Toolbar->renderTimeline(Array, 1643734360.5543, 2, 5, Array)
+#3 /var/www/html/codeigniter/system/Debug/Toolbar.php(501): include('/var/www/html/c...')
+#4 /var/www/html/codeigniter/system/Debug/Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#5 /var/www/html/codeigniter/app/Config/Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#6 /var/www/html/codeigniter/system/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#7 /var/www/html/codeigniter/system/CodeIgniter.php(302): CodeIgniter\Events\Events::trigger('pre_system')
+#8 /var/www/html/codeigniter/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 10:52:40 --> Uncaught ErrorException: setcookie() expects parameter 3 to be integer, array given in /var/www/html/codeigniter/system/HTTP/ResponseTrait.php:743
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'setcookie() exp...', '/var/www/html/c...', 743, Array)
+#1 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(743): setcookie('csrf_cookie_nam...', 'e757abe6730a4dc...', Array)
+#2 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(719): CodeIgniter\HTTP\Response->doSetCookie('csrf_cookie_nam...', 'e757abe6730a4dc...', Array)
+#3 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#5 /var/www/html/codeigniter/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#6 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#7 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-01 10:53:48 --> Call to undefined function CodeIgniter\Debug\array_key_first()
+#0 /var/www/html/codeigniter/system/Debug/Toolbar.php(275): CodeIgniter\Debug\Toolbar->structureTimelineData(Array)
+#1 /var/www/html/codeigniter/system/Debug/Toolbar.php(170): CodeIgniter\Debug\Toolbar->collectTimelineData(Array)
+#2 /var/www/html/codeigniter/system/Debug/Toolbar/Views/toolbar.tpl.php(96): CodeIgniter\Debug\Toolbar->renderTimeline(Array, 1643734427.9938, 2, 5, Array)
+#3 /var/www/html/codeigniter/system/Debug/Toolbar.php(501): include('/var/www/html/c...')
+#4 /var/www/html/codeigniter/system/Debug/Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#5 /var/www/html/codeigniter/app/Config/Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#6 /var/www/html/codeigniter/system/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#7 /var/www/html/codeigniter/system/CodeIgniter.php(302): CodeIgniter\Events\Events::trigger('pre_system')
+#8 /var/www/html/codeigniter/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 10:53:48 --> Uncaught ErrorException: setcookie() expects parameter 3 to be integer, array given in /var/www/html/codeigniter/system/HTTP/ResponseTrait.php:743
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'setcookie() exp...', '/var/www/html/c...', 743, Array)
+#1 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(743): setcookie('csrf_cookie_nam...', 'a664681da774656...', Array)
+#2 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(719): CodeIgniter\HTTP\Response->doSetCookie('csrf_cookie_nam...', 'a664681da774656...', Array)
+#3 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#5 /var/www/html/codeigniter/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#6 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#7 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-01 10:53:52 --> Call to undefined function CodeIgniter\Database\array_key_first()
+#0 /var/www/html/codeigniter/system/Database/Query.php(150): CodeIgniter\Database\Query->compileBinds()
+#1 /var/www/html/codeigniter/system/Database/BaseConnection.php(598): CodeIgniter\Database\Query->getQuery()
+#2 /var/www/html/codeigniter/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /var/www/html/codeigniter/system/Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/codeigniter/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#5 /var/www/html/codeigniter/app/Models/StudentModel.php(23): CodeIgniter\BaseModel->first()
+#6 /var/www/html/codeigniter/app/Controllers/Crud.php(35): App\Models\StudentModel->getStudentWhere('edit')
+#7 /var/www/html/codeigniter/system/CodeIgniter.php(825): App\Controllers\Crud->edit('15')
+#8 /var/www/html/codeigniter/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#9 /var/www/html/codeigniter/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/codeigniter/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-02-01 10:54:06 --> Call to undefined function CodeIgniter\Debug\array_key_first()
+#0 /var/www/html/codeigniter/system/Debug/Toolbar.php(275): CodeIgniter\Debug\Toolbar->structureTimelineData(Array)
+#1 /var/www/html/codeigniter/system/Debug/Toolbar.php(170): CodeIgniter\Debug\Toolbar->collectTimelineData(Array)
+#2 /var/www/html/codeigniter/system/Debug/Toolbar/Views/toolbar.tpl.php(96): CodeIgniter\Debug\Toolbar->renderTimeline(Array, 1643734446.0104, 2, 5, Array)
+#3 /var/www/html/codeigniter/system/Debug/Toolbar.php(501): include('/var/www/html/c...')
+#4 /var/www/html/codeigniter/system/Debug/Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#5 /var/www/html/codeigniter/app/Config/Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#6 /var/www/html/codeigniter/system/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#7 /var/www/html/codeigniter/system/CodeIgniter.php(302): CodeIgniter\Events\Events::trigger('pre_system')
+#8 /var/www/html/codeigniter/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 10:54:06 --> Uncaught ErrorException: setcookie() expects parameter 3 to be integer, array given in /var/www/html/codeigniter/system/HTTP/ResponseTrait.php:743
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'setcookie() exp...', '/var/www/html/c...', 743, Array)
+#1 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(743): setcookie('csrf_cookie_nam...', 'e48d9f6c4508118...', Array)
+#2 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(719): CodeIgniter\HTTP\Response->doSetCookie('csrf_cookie_nam...', 'e48d9f6c4508118...', Array)
+#3 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#5 /var/www/html/codeigniter/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#6 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#7 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-01 10:54:21 --> Call to undefined function CodeIgniter\Debug\array_key_first()
+#0 /var/www/html/codeigniter/system/Debug/Toolbar.php(275): CodeIgniter\Debug\Toolbar->structureTimelineData(Array)
+#1 /var/www/html/codeigniter/system/Debug/Toolbar.php(170): CodeIgniter\Debug\Toolbar->collectTimelineData(Array)
+#2 /var/www/html/codeigniter/system/Debug/Toolbar/Views/toolbar.tpl.php(96): CodeIgniter\Debug\Toolbar->renderTimeline(Array, 1643734461.5485, 2, 5, Array)
+#3 /var/www/html/codeigniter/system/Debug/Toolbar.php(501): include('/var/www/html/c...')
+#4 /var/www/html/codeigniter/system/Debug/Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#5 /var/www/html/codeigniter/app/Config/Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#6 /var/www/html/codeigniter/system/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#7 /var/www/html/codeigniter/system/CodeIgniter.php(302): CodeIgniter\Events\Events::trigger('pre_system')
+#8 /var/www/html/codeigniter/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 10:54:21 --> Uncaught ErrorException: setcookie() expects parameter 3 to be integer, array given in /var/www/html/codeigniter/system/HTTP/ResponseTrait.php:743
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'setcookie() exp...', '/var/www/html/c...', 743, Array)
+#1 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(743): setcookie('csrf_cookie_nam...', '57656bcdd87ebad...', Array)
+#2 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(719): CodeIgniter\HTTP\Response->doSetCookie('csrf_cookie_nam...', '57656bcdd87ebad...', Array)
+#3 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#5 /var/www/html/codeigniter/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#6 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#7 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-01 10:54:25 --> Call to undefined function CodeIgniter\Debug\array_key_first()
+#0 /var/www/html/codeigniter/system/Debug/Toolbar.php(275): CodeIgniter\Debug\Toolbar->structureTimelineData(Array)
+#1 /var/www/html/codeigniter/system/Debug/Toolbar.php(170): CodeIgniter\Debug\Toolbar->collectTimelineData(Array)
+#2 /var/www/html/codeigniter/system/Debug/Toolbar/Views/toolbar.tpl.php(96): CodeIgniter\Debug\Toolbar->renderTimeline(Array, 1643734465.8433, 2, 5, Array)
+#3 /var/www/html/codeigniter/system/Debug/Toolbar.php(501): include('/var/www/html/c...')
+#4 /var/www/html/codeigniter/system/Debug/Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#5 /var/www/html/codeigniter/app/Config/Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#6 /var/www/html/codeigniter/system/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#7 /var/www/html/codeigniter/system/CodeIgniter.php(302): CodeIgniter\Events\Events::trigger('pre_system')
+#8 /var/www/html/codeigniter/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 10:54:25 --> Uncaught ErrorException: setcookie() expects parameter 3 to be integer, array given in /var/www/html/codeigniter/system/HTTP/ResponseTrait.php:743
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'setcookie() exp...', '/var/www/html/c...', 743, Array)
+#1 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(743): setcookie('csrf_cookie_nam...', '905725b5cf9b2eb...', Array)
+#2 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(719): CodeIgniter\HTTP\Response->doSetCookie('csrf_cookie_nam...', '905725b5cf9b2eb...', Array)
+#3 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#5 /var/www/html/codeigniter/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#6 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#7 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-01 10:55:12 --> Call to undefined function CodeIgniter\Debug\array_key_first()
+#0 /var/www/html/codeigniter/system/Debug/Toolbar.php(275): CodeIgniter\Debug\Toolbar->structureTimelineData(Array)
+#1 /var/www/html/codeigniter/system/Debug/Toolbar.php(170): CodeIgniter\Debug\Toolbar->collectTimelineData(Array)
+#2 /var/www/html/codeigniter/system/Debug/Toolbar/Views/toolbar.tpl.php(96): CodeIgniter\Debug\Toolbar->renderTimeline(Array, 1643734511.9937, 2, 5, Array)
+#3 /var/www/html/codeigniter/system/Debug/Toolbar.php(501): include('/var/www/html/c...')
+#4 /var/www/html/codeigniter/system/Debug/Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#5 /var/www/html/codeigniter/app/Config/Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#6 /var/www/html/codeigniter/system/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#7 /var/www/html/codeigniter/system/CodeIgniter.php(302): CodeIgniter\Events\Events::trigger('pre_system')
+#8 /var/www/html/codeigniter/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-01 10:55:12 --> Uncaught ErrorException: setcookie() expects parameter 3 to be integer, array given in /var/www/html/codeigniter/system/HTTP/ResponseTrait.php:743
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'setcookie() exp...', '/var/www/html/c...', 743, Array)
+#1 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(743): setcookie('csrf_cookie_nam...', 'e1427c8ebdd431c...', Array)
+#2 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(719): CodeIgniter\HTTP\Response->doSetCookie('csrf_cookie_nam...', 'e1427c8ebdd431c...', Array)
+#3 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(699): CodeIgniter\HTTP\Response->dispatchCookies()
+#4 /var/www/html/codeigniter/system/HTTP/ResponseTrait.php(443): CodeIgniter\HTTP\Response->sendCookies()
+#5 /var/www/html/codeigniter/system/Debug/Exceptions.php(115): CodeIgniter\HTTP\Response->send()
+#6 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#7 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-01 10:55:27 --> Call to undefined function CodeIgniter\Database\array_key_first()
+#0 /var/www/html/codeigniter/system/Database/Query.php(150): CodeIgniter\Database\Query->compileBinds()
+#1 /var/www/html/codeigniter/system/Database/BaseConnection.php(598): CodeIgniter\Database\Query->getQuery()
+#2 /var/www/html/codeigniter/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#3 /var/www/html/codeigniter/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/codeigniter/system/BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/codeigniter/system/Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/codeigniter/app/Models/StudentModel.php(19): CodeIgniter\Model->insert(Array)
+#7 /var/www/html/codeigniter/app/Controllers/Crud.php(29): App\Models\StudentModel->addnewStudent(Array)
+#8 /var/www/html/codeigniter/system/CodeIgniter.php(825): App\Controllers\Crud->store()
+#9 /var/www/html/codeigniter/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#10 /var/www/html/codeigniter/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/codeigniter/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-02-01 10:56:04 --> Call to undefined function CodeIgniter\Database\array_key_first()
+#0 /var/www/html/codeigniter/system/Database/Query.php(150): CodeIgniter\Database\Query->compileBinds()
+#1 /var/www/html/codeigniter/system/Database/BaseConnection.php(598): CodeIgniter\Database\Query->getQuery()
+#2 /var/www/html/codeigniter/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#3 /var/www/html/codeigniter/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/codeigniter/system/BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#5 /var/www/html/codeigniter/system/Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#6 /var/www/html/codeigniter/app/Models/StudentModel.php(19): CodeIgniter\Model->insert(Array)
+#7 /var/www/html/codeigniter/app/Controllers/Crud.php(29): App\Models\StudentModel->addnewStudent(Array)
+#8 /var/www/html/codeigniter/system/CodeIgniter.php(825): App\Controllers\Crud->store()
+#9 /var/www/html/codeigniter/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#10 /var/www/html/codeigniter/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/codeigniter/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
